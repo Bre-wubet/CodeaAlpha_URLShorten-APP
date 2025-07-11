@@ -4,12 +4,18 @@ import UrlResult from "./components/UrlResult"
 
 function App() {
   const [shortUrl, setShortUrl] = useState('');
+  const [originalUrl, setOriginalUrl] = useState('');
+
+  const handleShorten = (short, original) => {
+    setShortUrl(short);
+    setOriginalUrl(original);
+  };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
+    <div className="items-center justify-center flex flex-col mt-10">
       <h1 className="text-3xl font-bold text-blue-600 mb-6">URL Shortener</h1>
-      <UrlForm onShorten={setShortUrl} />
-      {shortUrl && <UrlResult shortUrl={shortUrl} />}
+      <UrlForm onShorten={handleShorten} />
+      {shortUrl && <UrlResult shortUrl={shortUrl} originalUrl={originalUrl} />}
     </div>
   )
 }

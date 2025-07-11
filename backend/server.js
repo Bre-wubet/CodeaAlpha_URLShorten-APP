@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { Router } from 'express';
+
 import errorHandler from './middleware/errorHandler.js';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
@@ -8,6 +8,7 @@ import router from './routes/urlRoutes.js';
 
 const app = express();
 app.use(cors());
+
 dotenv.config();
 
 app.use(express.json());
