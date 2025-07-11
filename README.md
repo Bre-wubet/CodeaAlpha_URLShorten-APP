@@ -12,21 +12,21 @@ which redirect back to the original URLs.
     - React frontend for user input and display
 
 ### Technologies Used
-  - Backend: Node.js, Express.js, MongoDB, Mongoose, nanoid
-  - Frontend: React, Axios, Tailwind CSS
-  - Dev Tools: github, Postman
+   -  Backend: Node.js, Express.js, MongoDB, Mongoose, nanoid
+   -  Frontend: React, Axios, Tailwind CSS
+   -  Dev Tools: github, Postman
 
 ### 1. Clone the Repository
-    ...bash
-    [git clone https://](https://github.com/Bre-wubet/CodeaAlpha_URLShorten-APP.git)
+  ...bash
+  git clone https://github.com/Bre-wubet/CodeaAlpha_URLShorten-APP.git
 
 ### Install Dependencies
   # Backend
-  cd backend
-  npm install
+  ..cd backend
+  - npm install
   # Frontend
-  cd frontend
-  npm install
+  ..cd frontend
+  - npm install
 
 ### Environment Variables
   MONGO_URI=your-mongodb-uri
@@ -34,13 +34,13 @@ which redirect back to the original URLs.
   BASE_URL=your-base-url
 
 ### Run the backend
-   cd backend
-   npm run dev
+   ..cd backend
+   - npm run dev
 
 ### Run the frontend
-   cd frontend
-   npm run dev
+   ..cd frontend
+   - npm run dev
 
 ### API endpoints
-   POST /shorten
-   GET  /:shortCode
+   - POST /shorten
+   - GET  /:shortCode
